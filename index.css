@@ -1,0 +1,165 @@
+@media(min-width:1024px){
+                .grid-header{
+                    display: grid;
+                    width: 100%;
+                    height: 48vh;
+                    grid-template-columns: auto auto;
+                    flex-wrap: wrap;
+
+                }
+
+               
+                .grid-pro{
+                    display: grid;
+                    width: 100%;
+                    grid-template-columns:25% 35%;
+                    grid-template-rows:45vh;
+                    justify-content: center;
+                    padding-top: 10vh;
+                    justify-content: space-evenly;
+                    list-style: none;
+                    padding-bottom: 10vh; 
+                    flex-wrap: wrap;
+                    
+                }
+
+                .grid-footer{
+                    display: grid;
+                    width: 100%;
+                    grid-template-columns: repeat(3, 33% 33% 33%);
+                    grid-template-rows: 20vh;
+                    grid-template-areas: "footer";
+                    flex-wrap: wrap;
+                }
+   
+                
+
+                header{
+                    background-color: steelblue;
+                    text-align: center;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 17px;
+                    padding-top: 20px;
+                    margin-bottom: 50px;
+                    border: none;
+                }
+                
+                .link{
+                    color:black;
+                    font-size: 17px;
+                    font-family: 'Poppins', sans-serif;
+                    
+                }
+                
+                .lista{
+                    list-style-position: outside;   
+                    text-align: left; 
+                    line-height: 27px;
+                    list-style-type: none;
+                }
+                
+                main{
+                    font-family:'Poppins', sans-serif;
+                    font-size: 14px;
+                    text-align: center;
+                    border: none
+                    
+                }
+                
+                .formulario{
+                    text-align: left;
+                    font-family:'Poppins', sans-serif;
+                    font-size: 14px;
+                    padding-bottom: 70px;
+                    border: none
+                }
+                
+                 footer{background-color: lightblue;
+                    text-align: center;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 17px;
+                    padding-bottom: 30px;
+                    padding-top: 30px;
+                    border: none
+                }
+
+                p{
+                    color: black;
+                    font-size: 24px;
+                    font-family: 'Poppins', sans-serif;
+                    padding-bottom: 30px;
+                }
+
+                .listdos{color: black;
+                font-size: 16px;
+                list-style: none;
+                align-items: center; }
+
+}
+
+
+@media(min-width:320px) and (max-width:480px){
+    header{
+        background-color: steelblue;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 17px;
+        padding-top: 20px;
+        margin-bottom: 50px;
+        border: none;
+    }
+    
+    .link{
+        color:black;
+        font-size: 17px;
+        font-family: 'Poppins', sans-serif;
+        
+    }
+    
+    .lista{
+        list-style-position: outside;   
+        text-align: left; 
+        line-height: 27px;
+        list-style-type: none;
+    }
+    
+    main{
+        font-family:'Poppins', sans-serif;
+        font-size: 14px;
+        text-align: center;
+        border: none
+        
+    }
+    
+    .formulario{
+        text-align: left;
+        font-family:'Poppins', sans-serif;
+        font-size: 14px;
+        padding-bottom: 70px;
+        border: none
+    }
+    
+     footer{background-color: lightblue;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 17px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        border: none
+    }
+}
+
+
+
+                
+
+
+
+                    
+                
+
+
+
+
+
+
