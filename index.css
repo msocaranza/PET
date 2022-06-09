@@ -5,6 +5,8 @@
                     height: 48vh;
                     grid-template-columns: auto auto;
                     flex-wrap: wrap;
+                    background-color: #6a93cb;
+background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
 
                 }
 
@@ -30,6 +32,9 @@
                     grid-template-rows: 20vh;
                     grid-template-areas: "footer";
                     flex-wrap: wrap;
+                    background-color: #6a93cb;
+background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+
                 }
    
                 
@@ -71,7 +76,9 @@
                     font-family:'Poppins', sans-serif;
                     font-size: 14px;
                     padding-bottom: 70px;
-                    border: none
+                    border: none;
+                    background-color: #6a93cb;
+background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
                 }
                 
                  footer{background-color: lightblue;
@@ -95,18 +102,29 @@
                 list-style: none;
                 align-items: center; }
 
+                    .transicion{ 
+                        transition: width 2s, height 2s;    
+                    }
+
+                    .transicion:hover{
+                        width: 255px;
+                        height: 255px;
+                    }
+
 }
 
 
 @media(min-width:320px) and (max-width:480px){
     header{
-        background-color: steelblue;
+        
         text-align: center;
         font-family: 'Poppins', sans-serif;
         font-size: 17px;
         padding-top: 20px;
         margin-bottom: 50px;
-        border: none;
+        border: none; 
+        background-color: #6a93cb;
+        background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
     }
     
     .link{
@@ -136,16 +154,20 @@
         font-family:'Poppins', sans-serif;
         font-size: 14px;
         padding-bottom: 70px;
-        border: none
+        border: none; 
+        background-color: #6a93cb;
+        background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
     }
     
-     footer{background-color: lightblue;
+     footer{
         text-align: center;
         font-family: 'Poppins', sans-serif;
         font-size: 17px;
         padding-bottom: 30px;
         padding-top: 30px;
-        border: none
+        border: none;
+        background-color: #6a93cb;
+        background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
     }
 }
 
