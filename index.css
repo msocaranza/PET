@@ -2,12 +2,12 @@
                 .grid-header{
                     display: grid;
                     width: 100%;
-                    height: 48vh;
+                    height: 55vh;
                     grid-template-columns: auto auto;
-                    flex-wrap: wrap;
                     background-color: #6a93cb;
-background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
-
+                    background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+                    align-items: center;
+                    
                 }
 
                
@@ -21,7 +21,7 @@ background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
                     justify-content: space-evenly;
                     list-style: none;
                     padding-bottom: 10vh; 
-                    flex-wrap: wrap;
+                    
                     
                 }
 
@@ -31,9 +31,8 @@ background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
                     grid-template-columns: repeat(3, 33% 33% 33%);
                     grid-template-rows: 20vh;
                     grid-template-areas: "footer";
-                    flex-wrap: wrap;
                     background-color: #6a93cb;
-background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+                    background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
 
                 }
    
@@ -47,6 +46,7 @@ background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
                     padding-top: 20px;
                     margin-bottom: 50px;
                     border: none;
+                
                 }
                 
                 .link{
@@ -78,7 +78,7 @@ background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
                     padding-bottom: 70px;
                     border: none;
                     background-color: #6a93cb;
-background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+                    background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
                 }
                 
                  footer{background-color: lightblue;
@@ -102,15 +102,61 @@ background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
                 list-style: none;
                 align-items: center; }
 
-                    .transicion{ 
-                        transition: width 2s, height 2s;    
-                    }
+                .navegacion{
+                   justify-content: center;
+                    padding-bottom: 60px;
+                }
 
-                    .transicion:hover{
-                        width: 255px;
-                        height: 255px;
-                    }
+                .navegacion ul{
+                    list-style: none;
+                }
+                .menu{
+                    color:#DE3939;
+                }
+                
+                .menu > li{
+                    position: relative;
+                    display: inline-block;
+                    color: #DE3939
+                }
+                
+                .menu > li > a{
+                    display: block;
+                    padding: 15px 20px;
+                    font-family:'Poppins', sans-serif ;
+                    text-decoration: none;
+                }
+                
+                .menu li a:hover{
+                    color:#CE7D35;
+                    transition: all .3s;
+                }
+                
+                
+                
+                .submenu{
+                    position: absolute;
+                    
+                    width: 120%;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: opacity .5s;
+                }
+                
+                .submenu li a{
+                    display: block;
+                    padding: 15px;
+                    color: #fff;
+                    font-family: 'Poppins', sans-serif;
+                    text-decoration: none;
+                }
+                
+                .menu li:hover .submenu{
+                    visibility: visible;
+                    opacity: 1;
+                }
 
+                
 }
 
 
