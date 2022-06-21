@@ -1,0 +1,134 @@
+.link {
+  color: black;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+}
+
+.lista {
+  list-style-position: outside;
+  text-align: left;
+  line-height: 27px;
+  list-style-type: none;
+}
+
+p {
+  color: black;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 30px;
+}
+
+.listdos {
+  color: black;
+  font-size: 16px;
+  list-style: none;
+  align-items: center;
+}
+
+.grid-header {
+  display: grid;
+  width: 100%;
+  height: 55vh;
+  grid-template-columns: auto auto;
+  background-color: #6a93cb;
+  background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+  align-items: center;
+}
+
+header {
+  background-color: steelblue;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  padding-top: 20px;
+  margin-bottom: 50px;
+  border: none;
+}
+
+.navegacion {
+  justify-content: center;
+  padding-bottom: 60px;
+}
+.navegacion ul {
+  list-style: none;
+}
+
+.menu {
+  color: #DE3939;
+}
+.menu li {
+  position: relative;
+  display: inline-block;
+  color: #DE3939;
+}
+.menu li a {
+  display: block;
+  padding: 15px 20px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+.menu li a:hover {
+  color: #CE7D35;
+  transition: all 0.3s;
+}
+
+.menu li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.submenu {
+  position: absolute;
+  width: 120%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.submenu li a {
+  display: block;
+  padding: 15px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+.grid-produc {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 25% 35%;
+  grid-template-rows: 45vh;
+  justify-content: center;
+  padding-top: 10vh;
+  justify-content: space-evenly;
+  list-style: none;
+  padding-bottom: 10vh;
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  border: none;
+}
+
+.grid-footer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 33% 33% 33%);
+  grid-template-rows: 20vh;
+  grid-template-areas: "footer";
+  background-color: #6a93cb;
+  background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+}
+
+footer {
+  background-color: lightblue;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border: none;
+}
+
+/*# sourceMappingURL=index.css.map */
