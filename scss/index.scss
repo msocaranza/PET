@@ -1,12 +1,56 @@
 
 @import "clases";
 
-@media (max-width:480px){.grid-header{
+@mixin grid-header-m { 
     display: grid;
     width: 100%;
     height: 55vh;
     grid-template-columns: auto auto;
     align-items: center;
+    
+}
+
+@mixin menu-m {
+    color:#DE3939;
+        li{
+            position: relative;
+            display: inline-block;
+            color: #DE3939;
+                a{
+                    display: block;
+                    padding: 15px 20px;
+                    font-family:'Poppins', sans-serif ;
+                    text-decoration: none;
+                    &:hover{color:#CE7D35;
+                    transition: all .3s;}
+                }
+            }
+}
+
+@mixin grid-footer-m {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 33% 33% 33%);
+    grid-template-rows: 20vh;
+    grid-template-areas: "footer";
+
+}
+
+@mixin footer-m {text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border: none;
+    
+    
+}
+
+
+
+
+@media (max-width:480px){.grid-header{
+    @include grid-header-m();
 }
 
 header{
@@ -26,21 +70,7 @@ header{
             list-style: none;
             }}
         
-.menu{
-    color:#DE3939;
-        li{
-            position: relative;
-            display: inline-block;
-            color: #DE3939;
-                a{
-                    display: block;
-                    padding: 15px 20px;
-                    font-family:'Poppins', sans-serif ;
-                    text-decoration: none;
-                    &:hover{color:#CE7D35;
-                    transition: all .3s;}
-                }
-            }
+.menu{@include menu-m();
  }
 
  .menu li:hover .submenu{
@@ -82,33 +112,18 @@ text-align: center;
 border: none   
 }
 
-.grid-footer{
-display: grid;
-width: 100%;
-grid-template-columns: repeat(3, 33% 33% 33%);
-grid-template-rows: 20vh;
-grid-template-areas: "footer";
-background-color: #6a93cb;
-background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
-}
-footer{background-color: lightblue;
-text-align: center;
-font-family: 'Poppins', sans-serif;
-font-size: 17px;
-padding-bottom: 30px;
-padding-top: 30px;
-border: none;
-
+.grid-footer{@include grid-footer-m();
 }
 
-}
+footer{@include footer-m();
+    background-color:#a4bfef
+
+}}
+
+
 
 @media (min-width:481px) and (max-width:1023px){.grid-header{
-    display: grid;
-    width: 100%;
-    height: 55vh;
-    grid-template-columns: auto auto;
-    align-items: center;   
+    @include grid-header-m();
 }
  
 header{
@@ -129,20 +144,7 @@ header{
             }}
         
 .menu{
-    color:#DE3939;
-        li{
-            position: relative;
-            display: inline-block;
-            color: #DE3939;
-                a{
-                    display: block;
-                    padding: 15px 20px;
-                    font-family:'Poppins', sans-serif ;
-                    text-decoration: none;
-                    &:hover{color:#CE7D35;
-                    transition: all .3s;}
-                }
-            }
+   @include menu-m();
  }
 
  .menu li:hover .submenu{
@@ -185,30 +187,18 @@ border: none
 }
 
 .grid-footer{
-display: grid;
-width: 100%;
-grid-template-columns: repeat(3, 33% 33% 33%);
-grid-template-rows: 20vh;
-grid-template-areas: "footer";
-background-color: #6a93cb;
-background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+    @include grid-footer-m();
 }
-footer{background-color: lightblue;
-text-align: center;
-font-family: 'Poppins', sans-serif;
-font-size: 17px;
-padding-bottom: 30px;
-padding-top: 30px;
-border: none;
+footer{@include footer-m();
+    background-color:#a4bfef
 }}
 
 
+
+
+
 @media (min-width:1024px){.grid-header{
-    display: grid;
-    width: 100%;
-    height: 55vh;
-    grid-template-columns: auto auto;
-    align-items: center;
+    @include grid-header-m();
 }
 
 header{
@@ -229,20 +219,7 @@ header{
             }}
         
 .menu{
-    color:#DE3939;
-        li{
-            position: relative;
-            display: inline-block;
-            color: #DE3939;
-                a{
-                    display: block;
-                    padding: 15px 20px;
-                    font-family:'Poppins', sans-serif ;
-                    text-decoration: none;
-                    &:hover{color:#CE7D35;
-                    transition: all .3s;}
-                }
-            }
+    @include menu-m();
  }
 
  .menu li:hover .submenu{
@@ -285,22 +262,11 @@ border: none
 }
 
 .grid-footer{
-display: grid;
-width: 100%;
-grid-template-columns: repeat(3, 33% 33% 33%);
-grid-template-rows: 20vh;
-grid-template-areas: "footer";
-background-color: #6a93cb;
-background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+    @include grid-footer-m();
 }
-footer{background-color: lightblue;
-text-align: center;
-font-family: 'Poppins', sans-serif;
-font-size: 17px;
-padding-bottom: 30px;
-padding-top: 30px;
-border: none;
+footer{
+@include footer-m();
+background-color:#a4bfef
 
-}
-    
+}   
 }
