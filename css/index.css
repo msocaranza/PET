@@ -1,50 +1,33 @@
-.link {
-  color: black;
-  font-size: 17px;
-  font-family: "Poppins", sans-serif;
-}
-
-.lista {
-  list-style-position: outside;
-  text-align: left;
-  line-height: 27px;
-  list-style-type: none;
-}
-
-p {
-  color: black;
-  font-size: 24px;
-  font-family: "Poppins", sans-serif;
-  padding-bottom: 30px;
-}
-
-.listdos {
-  color: black;
-  font-size: 16px;
-  list-style: none;
-  align-items: center;
-}
-
 @media (max-width: 480px) {
   .grid-header {
     display: grid;
     width: 100%;
-    height: 55vh;
+    height: 60vh;
     grid-template-columns: auto auto;
     align-items: center;
+    height: 75vh;
+  }
+  .link {
+    color: black;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    text-align: center;
   }
   header {
     background-color: #a4bfef;
     text-align: center;
     font-family: "Poppins", sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     padding-top: 20px;
     margin-bottom: 50px;
     border: none;
+    margin-bottom: 45px;
   }
   .navegacion {
     justify-content: center;
     padding-bottom: 60px;
+    font-size: 14px;
   }
   .navegacion ul {
     list-style: none;
@@ -98,7 +81,7 @@ p {
   }
   main {
     font-family: "Poppins", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     border: none;
   }
@@ -116,29 +99,45 @@ p {
     padding-bottom: 30px;
     padding-top: 30px;
     border: none;
-    background-color: #a4bfef;
+    background-color: #92b4f0;
+  }
+  .listdos {
+    color: black;
+    font-size: 16px;
+    list-style: none;
+    align-items: center;
+    font-size: 11px;
   }
 }
 @media (min-width: 481px) and (max-width: 1023px) {
   .grid-header {
     display: grid;
     width: 100%;
-    height: 55vh;
+    height: 60vh;
     grid-template-columns: auto auto;
     align-items: center;
+    height: 70vh;
+  }
+  .link {
+    color: black;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    text-align: center;
   }
   header {
     background-color: #a4bfef;
     text-align: center;
     font-family: "Poppins", sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     padding-top: 20px;
     margin-bottom: 50px;
     border: none;
   }
   .navegacion {
     justify-content: center;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
+    font-size: 16px;
   }
   .navegacion ul {
     list-style: none;
@@ -210,29 +209,46 @@ p {
     padding-bottom: 30px;
     padding-top: 30px;
     border: none;
-    background-color: #a4bfef;
+    background-color: #92b4f0;
+  }
+  .listdos {
+    color: black;
+    font-size: 16px;
+    list-style: none;
+    align-items: center;
+    font-size: 14px;
   }
 }
 @media (min-width: 1024px) {
+  .link {
+    color: black;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    text-align: center;
+  }
   .grid-header {
     display: grid;
     width: 100%;
-    height: 55vh;
+    height: 60vh;
     grid-template-columns: auto auto;
     align-items: center;
+    height: 70vh;
   }
   header {
     background-color: #a4bfef;
     text-align: center;
     font-family: "Poppins", sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     padding-top: 20px;
     margin-bottom: 50px;
     border: none;
+    padding-right: 0px;
   }
   .navegacion {
     justify-content: center;
     padding-bottom: 60px;
+    font-size: 18px;
   }
   .navegacion ul {
     list-style: none;
@@ -286,7 +302,7 @@ p {
   }
   main {
     font-family: "Poppins", sans-serif;
-    font-size: 14px;
+    font-size: 17px;
     text-align: center;
     border: none;
   }
@@ -304,7 +320,13 @@ p {
     padding-bottom: 30px;
     padding-top: 30px;
     border: none;
-    background-color: #a4bfef;
+    background-color: #92b4f0;
+  }
+  .listdos {
+    color: black;
+    font-size: 16px;
+    list-style: none;
+    align-items: center;
   }
 }
 
