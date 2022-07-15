@@ -5,7 +5,7 @@
     height: 60vh;
     grid-template-columns: auto auto;
     align-items: center;
-    height: 75vh;
+    height: 36vh;
   }
   .link {
     color: black;
@@ -108,6 +108,12 @@
     align-items: center;
     font-size: 11px;
   }
+  .imagenes {
+    width: 190px;
+    height: 210px;
+    width: 100px;
+    height: 130px;
+  }
 }
 @media (min-width: 481px) and (max-width: 1023px) {
   .grid-header {
@@ -116,7 +122,7 @@
     height: 60vh;
     grid-template-columns: auto auto;
     align-items: center;
-    height: 70vh;
+    height: 16vh;
   }
   .link {
     color: black;
@@ -218,6 +224,12 @@
     align-items: center;
     font-size: 14px;
   }
+  .imagenes {
+    width: 190px;
+    height: 210px;
+    width: 150px;
+    height: 180px;
+  }
 }
 @media (min-width: 1024px) {
   .link {
@@ -233,7 +245,8 @@
     height: 60vh;
     grid-template-columns: auto auto;
     align-items: center;
-    height: 70vh;
+    height: 35vh;
+    margin: 0px;
   }
   header {
     background-color: #a4bfef;
@@ -243,12 +256,11 @@
     padding-top: 20px;
     margin-bottom: 50px;
     border: none;
-    padding-right: 0px;
   }
   .navegacion {
-    justify-content: center;
+    align-items: flex-start;
     padding-bottom: 60px;
-    font-size: 18px;
+    font-size: 17px;
   }
   .navegacion ul {
     list-style: none;
@@ -304,7 +316,8 @@
     font-family: "Poppins", sans-serif;
     font-size: 17px;
     text-align: center;
-    border: none;
+    margin: 0px;
+    padding-top: 5vh;
   }
   .grid-footer {
     display: grid;
@@ -327,6 +340,10 @@
     font-size: 16px;
     list-style: none;
     align-items: center;
+  }
+  .imagenes {
+    width: 190px;
+    height: 210px;
   }
 }
 
