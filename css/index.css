@@ -113,6 +113,39 @@
     width: 100px;
     height: 130px;
   }
+  .div-nos {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+  }
+  form {
+    width: 80%;
+    margin: auto;
+    background-color: #a4bfef;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+  input, textarea {
+    width: 80%;
+    margin-bottom: 15px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+  }
+  textarea {
+    min-height: 80px;
+    max-height: 120px;
+    max-width: 100%;
+  }
+  #boton {
+    background-color: #DE3939;
+    padding: 15px;
+  }
+  #boton:hover {
+    cursor: pointer;
+  }
 }
 @media (min-width: 481px) and (max-width: 1023px) {
   .grid-header {
@@ -227,6 +260,39 @@
     height: 210px;
     width: 150px;
     height: 180px;
+  }
+  .div-nos {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+  }
+  form {
+    width: 450px;
+    margin: auto;
+    background-color: #a4bfef;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+  input, textarea {
+    width: 80%;
+    margin-bottom: 15px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+  }
+  textarea {
+    min-height: 80px;
+    max-height: 120px;
+    max-width: 100%;
+  }
+  #boton {
+    background-color: #DE3939;
+    padding: 15px;
+  }
+  #boton:hover {
+    cursor: pointer;
   }
 }
 @media (min-width: 1024px) {
@@ -345,6 +411,34 @@
     text-align: center;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
+  }
+  form {
+    width: 450px;
+    margin: auto;
+    background-color: #a4bfef;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+  input, textarea {
+    width: 80%;
+    margin-bottom: 15px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+  }
+  textarea {
+    min-height: 80px;
+    max-height: 120px;
+    max-width: 100%;
+  }
+  #boton {
+    background-color: #DE3939;
+    padding: 15px;
+  }
+  #boton:hover {
+    cursor: pointer;
   }
 }
 
