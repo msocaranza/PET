@@ -1,10 +1,18 @@
 
 @import "clases";
 
+@mixin div-m {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
 @mixin imagenes-m{
     width: 190px;
     height: 210px;
 }
+
+
 
 @mixin grid-header-m { 
     display: grid;
@@ -19,13 +27,14 @@
         li{
             position: relative;
             display: inline-block;
-            color: #DE3939;
+           
                 a{
+                    
                     display: block;
                     padding: 15px 20px;
                     font-family:'Poppins', sans-serif ;
                     text-decoration: none;
-                    &:hover{color:#CE7D35;
+                    &:hover{color:#DE3939;
                     transition: all .3s;}
                 }
             }
@@ -121,7 +130,7 @@ header{@include header-m();
             li{
                 a{display: block;
                     padding: 15px;
-                    color: #fff;
+                    background-color: #a4bfef;
                     font-family: 'Poppins', sans-serif;
                     text-decoration: none;
                 }
@@ -201,6 +210,7 @@ header{
 
 
 .submenu{
+    
         position: absolute;
         width: 120%;
         visibility: hidden;
@@ -209,7 +219,7 @@ header{
             li{
                 a{display: block;
                     padding: 15px;
-                    color: #fff;
+                    background-color: #a4bfef;
                     font-family: 'Poppins', sans-serif;
                     text-decoration: none;
                 }
@@ -276,7 +286,7 @@ header{
 }
 
 .navegacion{
-
+    
     align-items:flex-start;
     padding-bottom: 60px;
     font-size: 17px;
@@ -288,6 +298,7 @@ header{
         
 .menu{
    @include menu-m();
+   
  }
 
  .menu li:hover .submenu{
@@ -301,11 +312,12 @@ header{
         width: 120%;
         visibility: hidden;
         opacity: 0;
+        background-color: #a4bfef;
         transition: opacity .5s;
             li{
                 a{display: block;
                     padding: 15px;
-                    color: #fff;
+                    
                     font-family: 'Poppins', sans-serif;
                     text-decoration: none;
                 }
@@ -337,5 +349,9 @@ footer{@include footer-m();
 }
 
 .imagenes{@include imagenes-m()}
+
+.div-nos{@include div-m();
+}
+
 
 }
