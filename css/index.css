@@ -146,6 +146,9 @@
   #boton:hover {
     cursor: pointer;
   }
+  .inp {
+    width: 20%;
+  }
 }
 @media (min-width: 481px) and (max-width: 1023px) {
   .grid-header {
@@ -294,6 +297,9 @@
   #boton:hover {
     cursor: pointer;
   }
+  .inp {
+    width: 20%;
+  }
 }
 @media (min-width: 1024px) {
   .link {
@@ -439,6 +445,9 @@
   }
   #boton:hover {
     cursor: pointer;
+  }
+  .inp {
+    width: 20%;
   }
 }
 
